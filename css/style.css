@@ -1,0 +1,305 @@
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+body{
+    direction: rtl;
+    font-family:'Droid Arabic Naskh', serif;
+    
+}
+
+* {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+a{
+  text-decoration: none;
+
+}
+ul{
+  padding: 0;
+}
+
+
+.q-container{
+  margin-bottom: 40px;
+}
+.question{
+    font-family:'Amiri', serif; 
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 55%;
+    margin: 60px auto;
+    text-align: -webkit-center;
+  }
+ 
+  /* .flex-container>div {
+    background-color: DodgerBlue;
+    color: white;
+    width: 100px;
+    margin: 10px;
+    flex: 0 1 25%;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+   */
+   .q-div-wrapper{
+    margin: 25px;
+    flex: 0 1 25%;
+    font-size: 24px;
+    border: 3px solid #000;
+    border-radius: 35px;
+   }
+ 
+
+  .q-block{
+    width: 100%;
+    text-align: -webkit-right;
+  }
+  .content-wrapper{
+ width: 80%; 
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+  }
+.read-wrapper{
+  margin-top: 25px;
+}
+  /* .img-block{
+    align-self: center;
+    
+  } */
+
+  .q-div-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 25px 30px;
+  }
+  .card-img{
+    width: 105px;
+  }
+/*   .question{
+        width: 85%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+   
+  } */
+
+  .q-btn{
+    padding: 12px ;
+    background: #29aaff;
+    color: #fff;
+    font-weight: 800;
+    /* border: 2px solid #000; */
+    border-radius: 17px;
+    border-style: none;
+    width: 75%;
+    cursor: pointer;
+}
+.read-more:hover{
+  color: #fff !important;
+  box-shadow: 0 5px 20px -7px rgb(0 0 0 / 90%) !important;
+  top: -2px !important;
+}
+.read-more{
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+
+.title{
+  margin-top: 0;
+}
+
+
+
+.nav {
+  padding: 5px;
+  background: #29aaff;
+  color: #fff;
+  position: fixed;
+  top: 88vh;
+  width: 60%;
+  border: 2px solid #000;
+  border-radius: 35px;
+
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  height: 55px;
+  place-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .flex-container .q-div-wrapper {
+   max-width: 75%;
+   flex: 0 1 30%;
+   }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 768px) {
+   .flex-container .q-div-wrapper {
+      max-width: 100%;
+      flex: 0 1 100%;
+   }
+   .card-img{
+    width: 60px;
+   }
+   .q-div-wrapper {
+    margin: 25px 0;
+   }
+   .content-wrapper {
+    width: 97%;
+    -webkit-line-clamp: 3;
+    font-size: 22px;
+}
+.read-more {
+  width: 100%;
+}
+.q-btn {
+  width: 100%;
+}
+.read-wrapper{
+  display: flex;
+}
+}
+
+
+@media (min-width: 878px) and (max-width: 1399px){
+  .nav {
+    width: 60%;
+  
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px){
+  .nav {
+    width: 60%;
+  
+  }
+}
+
+
+
+@media (max-width: 680px) {
+  .flex-container{
+    width: 80%;
+  }
+  .nav{
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+.nav-img{
+  width: 30px;
+}
+.nav-home{
+  background: #65dc40;
+  padding: 1px 30px;
+  border-radius: 25px;
+}
+.nav-home span{
+  color: #fff;
+}
+.nav-home:hover{
+  background: #90dfaa;
+}
+
+
+
+ .nav{
+  direction: ltr;
+} 
+.nav-btn {
+  font-size:1.1em;
+  
+  color:#fff;
+  border-radius:50px;
+  margin: auto;
+}
+.nav-btn span {
+  color:white;
+  font-size:0;
+  padding:10px 30px;
+}
+
+.nav-btn:hover {
+  background-color:#65dc40;
+  padding:20px 50px 20px 10px;
+  border:2px solid #000;
+}
+.nav-btn:hover span {
+  font-size:1.0em;
+}
+.nav-btn:hover .ico {
+  margin-left: 0px;
+  transform:rotate(360deg);
+}
+.nav-btn:hover .span {
+  visibility:visible;
+}
+.ico {
+  transition:all 0.5s;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  margin-left: -50px; 
+  margin-top: -10px;
+  font-size: 1.5em;
+}
+
+
+.home-nav-btn{
+  background-color: #65dc40;
+  padding: 20px 50px 20px 10px;
+  border: 2px solid #000;
+}
+
+.home-nav-btn span {
+  font-size: 1.0em;
+  color: white;
+  padding: 10px 30px;
+}
+
+.home-nav-btn .ico {
+  margin-left: 0px;
+  transform: rotate(360deg);
+}
